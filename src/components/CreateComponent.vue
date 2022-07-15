@@ -38,7 +38,8 @@ export default {
     },
     methods: {
         handleSubnitForm() {
-            let apiURL = 'http://localhost:4000/register'
+            console.log("55555555555555");
+            let apiURL = 'http://localhost:4000/api/create-student'
             axios.post(apiURL, this.student).then(() =>{
                 this.$router.push('/view');
                 this.student = {
