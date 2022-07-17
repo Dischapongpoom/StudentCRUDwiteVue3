@@ -55,7 +55,7 @@ export default {
     },
     methods:{
         deleteStudent(id){
-            let apiURL = `http://localhost:4000/api/delete-student/${id}`;
+            let apiURL = `http://localhost:4000/api/${id}`;
             let indexOfArrayItem = this.Students.findIndex(i => i._id === id);
 
             if(confirm("Do you really want to delete")){
