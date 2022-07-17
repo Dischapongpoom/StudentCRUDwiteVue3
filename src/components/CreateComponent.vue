@@ -39,7 +39,7 @@ export default {
     methods: {
         handleSubnitForm() {
             console.log("55555555555555");
-            let apiURL = "http://localhost:4000/api/create-student";
+            let apiURL = "http://localhost:4000/api/";
             axios
                 .post(apiURL, this.student)
                 .then(() => {
